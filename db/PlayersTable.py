@@ -41,7 +41,7 @@ class PlayersTable:
         connection = sqlite3.connect('baseball-rater.db')
         cursor = connection.cursor()
 
-        cursor.execute('SELECT * FROM players WHERE id=?;' (id,))
+        cursor.execute('SELECT * FROM players WHERE id=?;', (id,))
         playerRecord = cursor.fetchone()
         connection.close()
 

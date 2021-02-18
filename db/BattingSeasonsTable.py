@@ -60,7 +60,7 @@ class BattingSeasonsTable:
         connection.commit()
         connection.close()
 
-        return list(map(lambda record: BattingSeasonSchema.fromRecord(record)), battingSeasonRecords)
+        return list(map(lambda record: BattingSeasonSchema.fromRecord(record), battingSeasonRecords))
 
     def deleteForTeamSeason(teamSeasonId):
         connection = sqlite3.connect('baseball-rater.db')

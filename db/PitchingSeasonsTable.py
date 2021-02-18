@@ -51,7 +51,7 @@ class PitchingSeasonsTable:
 
         connection.close()
 
-        return list(map(lambda record: PitchingSeasonSchema.fromRecord(record)), pitchingSeasonRecords)
+        return list(map(lambda record: PitchingSeasonSchema.fromRecord(record), pitchingSeasonRecords))
 
     def retrieveById(id):
         connection = sqlite3.connect('baseball-rater.db')

@@ -58,6 +58,16 @@ class TeamSeasonsTable:
             return None
         return TeamSeasonSchema.fromRecord(firstRow)
 
+    def retrieveByTeam(team):
+        connection = sqlite3.connect('baseball-rater.db')
+        cursor = connection.cursor()
+        cursor.execute('SELECT * FROM teamseasons WHERE team=?;', (team,))
+
+        teamseasons = cursor.fetchall()
+        connection.close()
+
+        return list(map(TeamSeasonSchema.fromRecord, teamseasons))
+
     def delete(team, season):
         connection = sqlite3.connect('baseball-rater.db')
         cursor = connection.cursor()

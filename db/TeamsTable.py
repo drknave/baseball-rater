@@ -52,3 +52,14 @@ class TeamsTable:
 
         return id
 
+    def retrieveAll():
+        connection = sqlite3.connect('baseball-rater.db')
+        cursor = connection.cursor()
+        
+        cursor.execute('SELECT * FROM teams;')
+
+        teamRecords = cursor.fetchall()
+        connection.close()
+
+        return list(map(TeamSchema.fromRecord, teamRecords))
+
