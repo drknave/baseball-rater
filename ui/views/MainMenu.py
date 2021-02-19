@@ -1,5 +1,6 @@
-from ui.LoadTeamSeason import LoadTeamSeason
-from ui.ViewTeamSeason import ViewTeamSeason
+from ui.views.GenerateRatings import GenerateRatings
+from ui.views.LoadTeamSeason import LoadTeamSeason
+from ui.views.ViewTeamSeason import ViewTeamSeason
 from PyInquirer import prompt
 import os
 
@@ -23,9 +24,10 @@ class MainMenu:
         elif mainMenuSelection['function'] == 'View team season stats':
             ViewTeamSeason.display()
             MainMenu.display()
-        # elif mainMenuSelection['function'] is  'Generate player ratings':
-        #     updateStatsDatabase()
-        elif mainMenuSelection['function'] is 'Quit':
+        elif mainMenuSelection['function'] ==  'Generate player ratings':
+            GenerateRatings.display()
+            MainMenu.display()
+        elif mainMenuSelection['function'] == 'Quit':
             quit()
     
     def clearScreen():

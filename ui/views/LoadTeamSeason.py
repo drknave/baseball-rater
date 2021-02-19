@@ -1,5 +1,5 @@
 from capture.TeamSeasonCapture import TeamSeasonCapture
-from ui.TeamSelection import TeamSelection
+from ui.components.TeamSelection import TeamSelection
 from PyInquirer import prompt
 import os
 

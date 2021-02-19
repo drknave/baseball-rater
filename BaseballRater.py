@@ -1,5 +1,5 @@
 from db.DatabaseSetup import DatabaseSetup
-from ui.MainMenu import MainMenu
+from ui.views.MainMenu import MainMenu
 
 def initializeDatabase():
     DatabaseSetup.setup()
