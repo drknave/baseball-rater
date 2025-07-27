@@ -3,7 +3,7 @@ from bs4 import SoupStrainer
 from parsers import BRefTableParser
 from parsers.BRefPitcherParser import BRefPitcherParser
 
-pitchingTableStrainer = SoupStrainer(id="team_pitching")
+pitchingTableStrainer = SoupStrainer(id="players_standard_pitching")
 
 class BRefTeamPitchingTableParser:
     def __init__(self, teamSource):

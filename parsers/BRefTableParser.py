@@ -6,7 +6,7 @@ def collectPropertiesForRow(tableRow):
         value = __determineColumnValue(dataItem)
         if category is not None and value is not None:
             properties[category] = value
-            if category == 'player':
+            if category == 'name_display':
                 properties['data-append-csv'] = dataItem.attrs['data-append-csv']
 
     return properties
