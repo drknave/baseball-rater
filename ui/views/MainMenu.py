@@ -1,7 +1,7 @@
 from ui.views.GenerateRatings import GenerateRatings
 from ui.views.LoadTeamSeason import LoadTeamSeason
 from ui.views.ViewTeamSeason import ViewTeamSeason
-from PyInquirer import prompt
+from InquirerPy import prompt
 import os
 
 class MainMenu:

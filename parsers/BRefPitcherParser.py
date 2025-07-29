@@ -4,7 +4,6 @@ from data_objects.domain.Player import Player
 class BRefPitcherParser:
     def __init__(self, rowProperties):
         self.properties = rowProperties
-        print(rowProperties)
 
     def parse(self):
         pitchingSeason = PitchingSeason()

@@ -2,7 +2,7 @@ from ui.views.TeamBatting import TeamBatting
 from ui.views.TeamPitching import TeamPitching
 from ui.components.TeamSelection import TeamSelection
 from ui.components.TeamSeasonSelection import TeamSeasonSelection
-from PyInquirer import prompt
+from InquirerPy import prompt
 import os
 
 class ViewTeamSeason:

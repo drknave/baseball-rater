@@ -1,5 +1,5 @@
 from db.TeamSeasonsTable import TeamSeasonsTable
-from PyInquirer import prompt
+from InquirerPy import prompt
 import os
 
 class TeamSeasonSelection:

@@ -1,6 +1,6 @@
 from capture.TeamSeasonCapture import TeamSeasonCapture
 from ui.components.TeamSelection import TeamSelection
-from PyInquirer import prompt
+from InquirerPy import prompt
 import os
 
 class LoadTeamSeason:
